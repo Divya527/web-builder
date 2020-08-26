@@ -1,0 +1,33 @@
+body{
+text-align:left;
+padding:2px;
+color:black;
+}
+.container{
+  width: 250px;
+  height: 1500px;
+  padding:4px;
+  border: 1px solid black;
+ }
+h1{
+font-size:20px;
+}
+ 
+h2{
+font-size:15px;
+}
+p{
+   color:blue;
+}
+p1{
+   color:blue;
+}
+p2{
+   color:blue;
+}
+p3{
+	color:blue;
+}
+.Border-width{
+	column-width:4px;
+}

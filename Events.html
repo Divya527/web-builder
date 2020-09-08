@@ -1,21 +1,27 @@
+<!DOCTYPE html>
 <html>
-         <head> 
-                   <link href="Events.css" rel="stylesheet"> 
-         </head>
-           
-      <body>
-                 <h1>ATTRIBUTES<br/></h1>
-            <div class="container">
-                  <p>TEXT-VIEW </p> 
-                      <form action=" ">
-                        Text-align
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="attribute.css" rel="stylesheet"> 
+</head>
+<body>
+
+ <div class="tab">
+  <button class="tablinks" onclick="openView(event, 'TEXT-VIEW')">TEXT-VIEW</button>
+  <button class="tablinks" onclick="openView(event, 'FONT-VIEW')">FONT-VIEW</button>
+  <button class="tablinks" onclick="openView(event, 'BOX-VIEW')">BOX-VIEW</button>
+  <button class="tablinks" onclick="openView(event, 'BUTTON-VIEW')">BUTTON-VIEW</button>
+
+</div>
+
+<div id="TEXT-VIEW" class="tabcontent">
+	<p>  Text-align
                               <select id="list" onchange="getSelectValue();">
                                 <option value="Center">Center</option>
                                   <option value="Left">Left</option>
                                    <option value="Right">Right</option>
                               </select>
-                              <br><br>
-                        Text-style
+     Text-style
                               <select id="list" onchange="getSelectValue();">
                                 <option value="Text-size">Bold</option>
                                   <option value="Text-size">Italic</option>
@@ -23,12 +29,11 @@
                                     <option value="Text-size">Adelle</option>
                                      <option value="Text-size">Retro</option>
                               </select>
-                              <br><br>
-                         Text-Shadow
+                              
+     Text-Shadow
                                 <input type="text" id="Text-Shadow" name="Text-Shadow">
                                </select>
-                                <br><br>
-                        Text-transform
+    Text-transform
                                 <select id="list" onchange="getSelectValue();">
                                  <option value="Text-transform">none</option>
                                   <option value="Text-transform">Capitalize</option>
@@ -36,7 +41,7 @@
                                     <option value="Text-transform">Lowercase</option>
                                      <option value="Text-transform"></option>
                               </select>
-                              <br><br>
+                              
                         Text-decoration-Line
                                 <select id="list" onchange="getSelectValue();">
                                  <option value="Text-decoration-Line">none</option>
@@ -44,7 +49,7 @@
                                    <option value="Text-decoration-Line">Line-through</option>
                                     <option value="Text-decoration-Line">Underline</option>
                               </select>
-                              <br><br>   
+                              
                         Text-decoration-Style
                                 <select id="list" onchange="getSelectValue();">
                                  <option value="Text-decoration-Style">Solid</option>
@@ -53,15 +58,16 @@
                                     <option value="Text-decoration-Style">Dashed</option>
                                      <option value="Text-decoration-Style">Wavy</option>
                               </select>
-                              <br><br>
+                            
                         Text-decoration-Color
                                <input type="text" id="Text-decoration-Color" name="Text-decoration-Color">
                                </select>
                                 <br><br>
-                       
+                     </p>
+</div>
 
-                 <p1>FONT-VIEW </p1> <br><br>
-                        Font-size 
+<div id="FONT-VIEW" class="tabcontent">
+                      <p>   Font-size 
                             <select id="list" onchange="getSelectValue();">
                               <option value="font size">10-20px</option>
                                 <option value="font size">20-30px</option>
@@ -86,18 +92,20 @@
                                       <option value="Right">sans-serif</option>
                               </select>
                               <br><br>
-              <p2>BOX PROPERTIES</p2><br><br>
-                        Margin
+                      </p>
+</div>
+
+<div id="BOX-VIEW" class="tabcontent">
+                       <p> Margin
                                <select id="list" onchange="getSelectValue();">
-                                  <option value="margin">none</option>
                                   <option value="margin">Top</option>
                                   <option value="margin">Bottom</option>
                                    <option value="margin">Left</option>
                                     <option value="margin">Right</option>
                               </select>
-                              <br><br>
+                              
                         Margin-width <input type="text" id="Margin-width" name="Margin-width">
-                              <br><br>
+                              
                         Padding
                                <select id="list" onchange="getSelectValue();">
                                 <option value="Padding">Padding</option>
@@ -106,9 +114,9 @@
                                    <option value="Padding">Left</option>
                                     <option value="Padding">Right</option>
                                </select>
-                               <br><br>
+                               
                         Padding-width <input type="text" id="Padding-width" name="Padding-width">
-                               <br><br>
+                               
 
                         Border
                                 <select id="list" onchange="getSelectValue();">
@@ -116,7 +124,7 @@
                                   <option value="Padding">Bottom</option>
                                    <option value="Padding">Left</option>
                                     <option value="Padding">Right</option>
-                               </select><br><br>
+                               </select>
                         Border-style
                                <select id="list" onchange="getSelectValue();">
                                 <option value="Border-style">none</option>
@@ -128,34 +136,34 @@
                                         <option value="Border-style">Ridge</option>
                                          <option value="Border-style">Inset</option>
                                           <option value="Border-style">Outset</option>
-                              </select><br><br>
+                              </select>
                         Border-Collapse
                                <select id="list" onchange="getSelectValue();">
                                 <option value="Border-Collapse">Collapse</option>
                                   <option value="Border-Collapse">Seperate</option>
-                               </select><br><br>
+                               </select>
                         Border-width <input type="text" id="Border-width" name="Border-width">
-                               <br><br>
+                               
                         Border-color <input type="text" id="Border-color" name="Border-color">
-                               <br><br>
+                               
                         Box-Shadow <input type="text" id="Box-Shadow" name="Box-Shadow">
-                               <br><br>
+                               
                         Box-height  <input type="text" id="Box-height" name="Box-height">
-                               <br><br>
+                               
                         Box-width  <input type="text" id="Box-width" name="Box-width">
-                               <br><br>
+                               
                         Float
                               <select id="list" onchange="getSelectValue();">
                                   <option value="Float">Left</option>
                                    <option value="Float">Right</option>
                                </select>
-                              <br><br>  
+                              
                         Box-type
                                <select id="list" onchange="getSelectValue();">
                                   <option value="Box-type">Conent-Box</option>
                                    <option value="Box-type">Border-Box</option>
                                </select>
-                              <br><br>
+                            
                         Position
                                 <select id="list" onchange="getSelectValue();">
                                   <option value="Position">Static</option>
@@ -164,10 +172,13 @@
                                      <option value="Position">Sticky</option> 
                                       <option value="Position">Fixed</option>
                                  </select>
-                                <br><br>
+                      </p>
+                    </div>
+                              
+            
+<div id="BUTTON-VIEW" class="tabcontent">
 
-              <p3>BUTTON</p3>   <br><br>
-                            Button-type
+                 <p>      Button-type
                               <select id="list" onchange="getSelectValue();">
                                   <option value="BUTTON">none</option>
                                    <option value="BUTTON">Flat button</option>
@@ -175,13 +186,10 @@
                                      <option value="BUTTON">Toggle button</option> 
                                       <option value="BUTTON">Round button</option>
                                        <option value="BUTTON">Submit button</option>
-                                        <option value="BUTTON">Reset button</option>
-                                         <option value="BUTTON">Radio button</option>
-                                         <option value="BUTTON">Reset button</option>
-                                          <option value="BUTTON">Icon button</option>
+                                        <option value="">Reset button</option>
                               </select>
                               <br><br>
-                            Button-Text
+                               Button-Text
                               <input type="text" id="Button-Text" name="Text">
                               <br><br>
                             Button-Margin
@@ -199,15 +207,32 @@
                             Background-Color
                               <input type="text" id="Background-color" name="Background-color">
                               <br><br>
-                  </div>            
-      </form>
-      <script>
-          function getSelectValue(){
+                         </p>
+                 </div>
+
+
+<script>
+ function getSelectValue(){
                 var selectedValue=document.getElementById("list").value;
                 console.log(selectedValue);
                }  
               getSelectedValue();
-                          
-      </script>              
-   </body>
-</html>   
+              
+function openView(evt,eventName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(eventName).style.display = "block";
+  evt.currentTarget.className += " active";
+ 
+}
+</script>
+   
+</body>
+</html> 
